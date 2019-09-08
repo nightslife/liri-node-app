@@ -1,11 +1,14 @@
 
-||spotify-this-song,all+the+small+things||
-Artist: blink-182
-Song title: All The Small Things
-Preview Link: https://open.spotify.com/track/2m1hi0nfMR9vdGC8UcrnwU
-Album: Enema Of The State
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-||concert-this,ariana+grande||
+|| Command: movie-this ||| Searched: the+matrix ||
+Title: The Matrix
+Release Year: 1999
+IMDB Rating: 8.7
+Rotten Tomatoes Rating: 88%
+Country: USA
+Language: English
+Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+|| Command: concert-this ||| Searched: ariana+grande ||
 Venue: Ziggo Dome
 Location: Amsterdam, Netherlands
 Date: Sep 11th 2019, 7:00 pm
@@ -18,37 +21,33 @@ Venue: Arena Birmingham
 Location: Birmingham, United Kingdom
 Date: Sep 15th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: The SSE Hydro
+Location: Glasgow, United Kingdom
+Date: Sep 17th 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: 3Arena
+Location: Dublin 1, Ireland
+Date: Sep 23rd 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: FlyDSA Arena
 Location: Sheffield, United Kingdom
 Date: Sep 19th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: 3Arena
 Location: Dublin, Ireland
-Date: Sep 22nd 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: 3Arena
-Location: Dublin 1, Ireland
-Date: Sep 23rd 2019, 7:00 pm
+Date: Sep 25th 2019, 6:30 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Barclaycard Arena Hamburg
 Location: Hamburg, Germany
 Date: Sep 28th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: The SSE Hydro
-Location: Glasgow, United Kingdom
-Date: Sep 17th 2019, 7:00 pm
+Venue: 3Arena
+Location: Dublin, Ireland
+Date: Sep 22nd 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Royal Arena
 Location: Copenhagen, Denmark
 Date: Oct 1st 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: Telenor Arena
-Location: Oslo, Norway
-Date: Oct 3rd 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: 3Arena
-Location: Dublin, Ireland
-Date: Sep 25th 2019, 6:30 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Hartwall Arena
 Location: Helsinki, Finland
@@ -62,6 +61,10 @@ Venue: Ericsson Globe
 Location: Stockholm, Sweden
 Date: Oct 7th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: Mercedes-Benz Arena
+Location: Berlin, Germany
+Date: Oct 10th 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Hallenstadion
 Location: Zürich, Switzerland
 Date: Oct 13th 2019, 7:00 pm
@@ -70,41 +73,41 @@ Venue: The O2
 Location: London, United Kingdom
 Date: Oct 15th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: Mercedes-Benz Arena
-Location: Berlin, Germany
-Date: Oct 10th 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: Barclays Center
-Location: Brooklyn, United States
-Date: Nov 12th 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Nassau Veterans Memorial Coliseum
 Location: Uniondale, United States
 Date: Nov 9th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: John Paul Jones Arena
-Location: Charlottesville, United States
-Date: Nov 15th 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: Rupp Arena
-Location: Lexington, United States
-Date: Nov 17th 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: State Farm Arena
-Location: Atlanta, United States
-Date: Nov 19th 2019, 7:00 pm
+Venue: Telenor Arena
+Location: Oslo, Norway
+Date: Oct 3rd 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: The O2
 Location: London, United Kingdom
 Date: Oct 16th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: Rupp Arena
+Location: Lexington, United States
+Date: Nov 17th 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: John Paul Jones Arena
+Location: Charlottesville, United States
+Date: Nov 15th 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: Barclays Center
+Location: Brooklyn, United States
+Date: Nov 12th 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: State Farm Arena
+Location: Atlanta, United States
+Date: Nov 19th 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Amalie Arena
 Location: Tampa, United States
 Date: Nov 24th 2019, 8:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: American Airlines Arena
-Location: Miami, United States
-Date: Nov 27th 2019, 7:00 pm
+Venue: Amway Center
+Location: Orlando, United States
+Date: Nov 25th 2019, 8:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: VyStar Veterans Memorial Arena
 Location: Jacksonville, United States
@@ -118,9 +121,9 @@ Venue: Colonial Life Arena
 Location: Columbia, United States
 Date: Dec 3rd 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: Bridgestone Arena
-Location: Nashville, United States
-Date: Dec 5th 2019, 7:00 pm
+Venue: American Airlines Arena
+Location: Miami, United States
+Date: Nov 27th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: American Airlines Center
 Location: Dallas, United States
@@ -134,25 +137,21 @@ Venue: FedEx Forum
 Location: Memphis, United States
 Date: Dec 7th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: Honda Center
-Location: Anaheim, United States
-Date: Dec 13th 2019, 7:00 pm
+Venue: Bridgestone Arena
+Location: Nashville, United States
+Date: Dec 5th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Chase Center Experience
 Location: San Francisco, United States
 Date: Dec 17th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: Amway Center
-Location: Orlando, United States
-Date: Nov 25th 2019, 8:00 pm
+Venue: Honda Center
+Location: Anaheim, United States
+Date: Dec 13th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Grand Garden Arena
 Location: Las Vegas, United States
 Date: Dec 15th 2019, 7:00 pm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Venue: The Forum
-Location: Los Angeles, United States
-Date: Dec 21st 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: Chase Center Experience
 Location: San Francisco, United States
@@ -160,14 +159,9 @@ Date: Dec 18th 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Venue: The Forum
 Location: Los Angeles, United States
+Date: Dec 21st 2019, 7:00 pm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue: The Forum
+Location: Los Angeles, United States
 Date: Dec 22nd 2019, 7:00 pm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-||movie-this,the+matrix||
-Title: The Matrix
-Release Year: 1999
-IMDB Rating: 8.7
-Rotten Tomatoes Rating: 88%
-Country: USA
-Language: English
-Actors: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
-Plot: A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.

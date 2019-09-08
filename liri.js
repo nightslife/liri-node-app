@@ -12,20 +12,14 @@ var omdbapi = keys.OMDB.key
 var searchCommand = process.argv[2];
 var searchTerms = process.argv.slice(3).join("+");
 var separator = "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-var toAppendArray = []
-toAppendArray.push("\n||"+searchCommand, searchTerms+"||")
-toAppend = toAppendArray.join(",")
-// fs.appendFile("log.txt",toAppend,(err)=>{
-//     if(err) throw err;
-//     console.log("The search was logged.")
-// })
+var toAppendSearch = "\n|| Command: "+searchCommand+" ||| Searched: "+searchTerms+" ||"
 
 function appendThisStuff (dataToAppend){
     fs.appendFile("log.txt",dataToAppend, (err)=>{
         if(err)throw err
     })
 }
-appendThisStuff(toAppend)
+appendThisStuff(toAppendSearch)
 function switchSearch (){
 switch(searchCommand){
     case "concert-this":
