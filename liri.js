@@ -13,12 +13,19 @@ var searchCommand = process.argv[2];
 var searchTerms = process.argv.slice(3).join("+");
 var separator = "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 var toAppendArray = []
-toAppendArray.push(searchCommand, searchTerms)
+toAppendArray.push("\n||"+searchCommand, searchTerms+"||")
 toAppend = toAppendArray.join(",")
-fs.appendFile("log.txt",toAppend,(err)=>{
-    if(err) throw err;
-    console.log("The search was logged.")
-})
+// fs.appendFile("log.txt",toAppend,(err)=>{
+//     if(err) throw err;
+//     console.log("The search was logged.")
+// })
+
+function appendThisStuff (dataToAppend){
+    fs.appendFile("log.txt",dataToAppend, (err)=>{
+        if(err)throw err
+    })
+}
+appendThisStuff(toAppend)
 function switchSearch (){
 switch(searchCommand){
     case "concert-this":
@@ -28,8 +35,9 @@ switch(searchCommand){
 
             for(i of bandRes.data){
                 let tourDate = moment(i.datetime).format("MMM Do YYYY, h:mm a")
-                console.log("\nVenue: "+i.venue.name+"\nLocation: "+i.venue.city+", "+i.venue.country+"\nDate: "+tourDate)
-                console.log(separator)
+                let tourData = "\nVenue: "+i.venue.name+"\nLocation: "+i.venue.city+", "+i.venue.country+"\nDate: "+tourDate+separator
+                appendThisStuff(tourData)
+                console.log(tourData)
             }
         })
         break
@@ -40,11 +48,13 @@ switch(searchCommand){
             if(err){
                 return console.log('Error occurred: '+err);
             }
-            let songData =data.tracks.items[0]
-            console.log("Artist: "+songData.artists[0].name+
+            let songData = data.tracks.items[0]
+            let songResults = "\nArtist: "+songData.artists[0].name+
             "\nSong title: "+songData.name+
             "\nPreview Link: "+songData.external_urls.spotify+
-            "\nAlbum: "+songData.album.name)
+            "\nAlbum: "+songData.album.name+separator
+            appendThisStuff(songResults)
+            console.log(songResults)
         })
         break
     
@@ -53,14 +63,16 @@ switch(searchCommand){
         let movieURL = "http://www.omdbapi.com/?t="+searchTerms+"&apikey="+omdbapi
         axios.get(movieURL).then(function(movieRes){
             let data = movieRes.data
-            console.log("\nTitle: "+data.Title+
+            let movieData = "\nTitle: "+data.Title+
             "\nRelease Year: "+data.Year+
             "\nIMDB Rating: "+data.imdbRating+
             "\nRotten Tomatoes Rating: "+data.Ratings[1].Value+
             "\nCountry: "+data.Country+
             "\nLanguage: "+data.Language+
             "\nActors: "+data.Actors+
-            "\nPlot: "+data.Plot)
+            "\nPlot: "+data.Plot
+            console.log(movieData)
+            appendThisStuff(movieData)
         })
         break
     
