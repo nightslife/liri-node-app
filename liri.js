@@ -7,7 +7,7 @@ var axios = require("axios")
 
 var spotify = new Spotify(keys.spotify)
 
-
+var omdbapi = keys.OMDB.key
 
 var searchCommand = process.argv[2];
 var searchTerms = process.argv.slice(3).join("+");
@@ -32,7 +32,19 @@ switch(searchCommand){
         break
     
     case "movie-this":
-
+        if(!searchTerms){searchTerms = "Mr+Nobody"}
+        let movieURL = "http://www.omdbapi.com/?t="+searchTerms+"&apikey="+omdbapi
+        axios.get(movieURL).then(function(movieRes){
+            let data = movieRes.data
+            console.log("\nTitle: "+data.Title+
+            "\nRelease Year: "+data.Year+
+            "\nIMDB Rating: "+data.imdbRating+
+            "\nRotten Tomatoes Rating: "+data.Ratings[1].Value+
+            "\nCountry: "+data.Country+
+            "\nLanguage: "+data.Language+
+            "\nActors: "+data.Actors+
+            "\nPlot: "+data.Plot)
+        })
         break
     
     case "do-what-it-says":
