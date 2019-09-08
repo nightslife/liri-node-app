@@ -28,7 +28,17 @@ switch(searchCommand){
         break
     
     case "spotify-this-song":
-
+        if(!searchTerms){searchTerms = "The Sign Ace of Base"}
+        spotify.search({type: 'track', query:searchTerms}, function(err, data){
+            if(err){
+                return console.log('Error occurred: '+err);
+            }
+            let songData =data.tracks.items[0]
+            console.log("Artist: "+songData.artists[0].name+
+            "\nSong title: "+songData.name+
+            "\nPreview Link: "+songData.external_urls.spotify+
+            "\nAlbum: "+songData.album.name)
+        })
         break
     
     case "movie-this":
