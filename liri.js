@@ -12,7 +12,7 @@ var omdbapi = keys.OMDB.key
 var searchCommand = process.argv[2];
 var searchTerms = process.argv.slice(3).join("+");
 var separator = "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
+function switchSearch (){
 switch(searchCommand){
     case "concert-this":
         let bandURL = "https://rest.bandsintown.com/artists/" + searchTerms + "/events?app_id=codingbootcamp"
@@ -58,8 +58,15 @@ switch(searchCommand){
         break
     
     case "do-what-it-says":
-
+        fs.readFile("random.txt","utf8", (err,data)=>{
+            if(err) throw err;
+            searchArray = data.split(",")
+            searchCommand = searchArray[0]
+            searchTerms = searchArray[1]
+            switchSearch()
+        })
         break
     default:
-        console.log("This is not a known command. Please try again.")    
-}
+        console.log("This is not a known command. Please try again.")  
+}}
+switchSearch()
